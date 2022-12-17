@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <style>
+    body {min-height: 100vh; text-align: center;}
+    footer {position: absolute; bottom: 10px; right: 5px;}
+    main {height: 70%; display: flex; align-items: center; flex-direction: column;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Digital Library Archive</h1>
+  </header>
+  <main>
+    <h1>Uploading file to Archive</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+      {{form.hidden_tag()}}
+      {{form.file()}}
+      {{form.submit()}}
+    </form>
+  </main>
+  <footer>
+    <small>Designed by Chinonso</small>
+  </footer>
+</body>
+</html>
